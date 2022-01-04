@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 
+3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+	<definition name="user-users" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/users.jsp" />
+	</definition>
+	<definition name="user-userUpdate" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userUpdate.jsp" />
+	</definition>
+	<definition name="user-userDetail" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userDetail.jsp" />
+	</definition>
+	<definition name="user-searchUser" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/searchUser.jsp" />
+	</definition>
+	<definition name="category-categories"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/categories.jsp" />
+	</definition>
+	<definition name="publisher-publishers"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/publisher/publishers.jsp" />
+	</definition>
+	<definition name="product-products"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/products.jsp" />
+	</definition>
+	<definition name="category-searchCategory"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/searchCategory.jsp" />
+	</definition>
+	<definition name="publisher-searchPublisher"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/publisher/searchPublisher.jsp" />
+	</definition>
+	<definition name="product-searchProduct"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/searchProduct.jsp" />
+	</definition>
+	<definition name="category-categoryUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/categoryUpdate.jsp" />
+	</definition>
+	<definition name="publisher-publisherUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/publisher/publisherUpdate.jsp" />
+	</definition>
+	<definition name="product-productUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/productUpdate.jsp" />
+	</definition>
+	<definition name="product-productDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/product/productDetail.jsp" />
+	</definition>
+	<definition name="category-categoryDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/category/categoryDetail.jsp" />
+	</definition>
+	<definition name="publisher-publisherDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/publisher/publisherDetail.jsp" />
+	</definition>
+	<definition name="order-orders" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orders.jsp" />
+	</definition>
+
+	<definition name="order-print" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/print.jsp" />
+	</definition>
+	<definition name="order-orderDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderDetail.jsp" />
+	</definition>
+
+	<definition name="order-orderUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderUpdate.jsp" />
+	</definition>
+
+	<definition name="order-searchOrder"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrder.jsp" />
+	</definition>
+
+	<definition name="order-searchOrderByName"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrderByName.jsp" />
+	</definition>
+
+	<definition name="order-searchOrderByDatesAndTime"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/searchOrderByDatesAndTime.jsp" />
+	</definition>
+
+	<!-- OrderDetail Page -->
+	<definition name="orderDetail-orders"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderDetail/orders.jsp" />
+	</definition>
+
+	<definition name="orderDetail-orderUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderDetail/orderUpdate.jsp" />
+	</definition>
+
+	<definition name="orderDetail-orderDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/orderDetail/orderDetail.jsp" />
+	</definition>
+
+	<!-- Customer Page -->
+	<definition name="customer-customers"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customers/customers.jsp" />
+	</definition>
+
+	<definition name="customer-customerDetail"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customers/customerDetail.jsp" />
+	</definition>
+
+	<definition name="customer-customerUpdate"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customers/customerUpdate.jsp" />
+	</definition>
+	<definition name="customer-searchCustomer"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/customers/searchCustomer.jsp" />
+	</definition>
+
+</tiles-definitions>
